@@ -4,7 +4,7 @@ var personnes = [
   { nom: "Paul", age: 17 },
   { nom: "Jacques", age: 30 },
 ];
-
+// Créer une fonction verifMajeur qui prend en paramètre un tableau d'objets et retourne vrai si tous les éléments ont un âge supérieur ou égal à 18, sinon faux.
 function verifMajeur(personnes) {
     var count = 0;
   for (let i = 0; i < personnes.length; i++) {
@@ -19,5 +19,5 @@ function verifMajeur(personnes) {
     console.log("Les personne sont tous majeur.")
   }
 }
-
+// Appeler la fonction verifMajeur avec le tableau personnes.
 verifMajeur(personnes);

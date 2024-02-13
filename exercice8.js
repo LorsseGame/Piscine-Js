@@ -4,7 +4,7 @@ const personnes = [
     { nom: 'Paul', age: 20 },
     { nom: 'Jacques', age: 30 }
   ];
-  
+  // Trier le tableau personnes par nom puis par âge
   personnes.sort((a, b) => {
     // Trier par nom
     if (a.nom < b.nom) return -1;
@@ -13,5 +13,5 @@ const personnes = [
     // Si les noms sont égaux, trier par âge
     return a.age - b.age;
   });
-  
+  // Afficher le tableau trié
   console.log(personnes);

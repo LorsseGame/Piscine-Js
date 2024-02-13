@@ -4,6 +4,7 @@
 function delay(callback, wait) {
   setTimeout(callback, wait);
 }
+
 // Appeler la fonction delay avec une fonction qui affiche "Hello" après 1 seconde.
 delay(function () {
   console.log("Hello");

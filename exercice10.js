@@ -41,7 +41,7 @@ let animals = [{
     especes: "mammifère"
 }];
 
-
+// Créer une fonction checkIsMammifere qui prend en paramètre un objet animal et retourne une promesse. Si l'animal est un mammifère, la promesse doit être résolue avec le message "C'est un mammifère". Sinon, la promesse doit être rejetée avec le message "Ce n'est pas un mammifère".
 function checkIsMammifere(animals){
   return new Promise((resolve, reject) => {
     if(animals.especes === "mammifère"){
@@ -51,7 +51,7 @@ function checkIsMammifere(animals){
     }
   });
 }
-
+// Appeler la fonction checkIsMammifere avec chaque élément du tableau animals.
 animals.forEach(value => {
     checkIsMammifere(value)
         .then((resolve) => console.log(resolve))
