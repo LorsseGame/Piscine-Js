@@ -1,9 +1,8 @@
 // Exercice 7: Implémenter une fonction de réduction personnalisée
-var prix = 548;
-var reduction = 20;
-// Créer une fonction reduce qui prend en paramètre un prix et une réduction et retourne le prix après réduction.
-function reduce(prix, reduction) {
-    return prix / 100 * (100 - reduction);
-}
-// Appeler la fonction reduce avec les valeurs 548 et 20.
-console.log(reduce(prix, reduction));
+let table = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// Utiliser la méthode reduce pour calculer la somme des éléments du tableau
+let initial = 0;
+
+sumWithInitial = table.reduce((acc, value) => acc + value, initial);
+// Afficher le résultat
+console.log(sumWithInitial); 
